@@ -22,7 +22,7 @@ body {
     font-family: var(--body-font);
     color: var(--accent1-color);
     background-color: var(--secondary-color);
-    line-height: 1.6;
+
 }
 
 header, main, footer {
@@ -33,7 +33,7 @@ header, main, footer {
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    margin-bottom: 12px;
+
 }
 
 nav, p, section, article {
@@ -50,7 +50,7 @@ nav, p, section, article {
 }
 
 .hero img {
-    position: absolute;
+    
     display: block;
     width: 100%;
     height: auto;
@@ -65,25 +65,13 @@ nav, p, section, article {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
-}
-
-.hero article {
-
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 12px;
-    border-radius: 8px;
+  
 }
 
 .hero article img {
     float: right;
     width: 125px;
-    margin: 8px;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+
 }
 
 footer {
@@ -92,17 +80,24 @@ footer {
   background-color: #222;
   color: #fff;
 }
-
-footer .socialmedia a {
-  margin: 0 10px;
-  display: inline-block;
+/* ✅ Navigation links */
+nav a:hover {
+  color: #ff6600;
 }
 
-footer .socialmedia img {
+/* ✅ Footer social media */
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.socialmedia img {
+  width: 40px;
+  height: 40px;
   vertical-align: middle;
   transition: transform 0.3s;
 }
 
-footer .socialmedia img:hover {
+.socialmedia img:hover {
   transform: scale(1.2);
 }
