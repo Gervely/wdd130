@@ -107,11 +107,47 @@ nav, p, section, article {
   line-height: 1.6;
 }
 
+.adventures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 840px;
+  margin: 2rem auto;
+}
+
+.adventures figure {
+  flex: 1 1 150px;
+  text-align: center;
+}
+
+.adventures img {
+  width: 50%;
+  height: auto;
+  border-radius: 6px;
+}
+
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #222;
+  background-color: steelblue;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .social img {
+  width: 30px;
+  height: 30px;
 }
 /* ✅ Navigation links */
 nav a:hover {
