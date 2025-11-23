@@ -68,37 +68,50 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+main {
+    padding: 1rem;
 }
 
 .hero {
   position: relative;
+  max-width: 840px;
+  margin: 0 auto;
 }
 
-.hero img {
-    
-    display: block;
-    width: 100%;
-    height: auto;
+.hero img { 
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
+  position: absolute;   
+  top: 20px;         
+  left: 1px;
   text-align: center;
+  width: 100%;
   opacity: 0.7;
   background-color: var(--accent1-color);
-  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;           
+  color: white;
+}
 
+.hero article {
+  position: absolute;  
+  bottom: 10px;      
+  right: 20px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.6);
+  padding: 10px;
+  max-width: 60%;
+  border-radius: 4px;
+ 
 }
 
 .hero article img {
-    float: right;
-    width: 125px;
-
+  float: right;
+  width: 125px;
 }
 
 .history {
@@ -129,7 +142,7 @@ nav, p, section, article {
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
   background-color: steelblue;
   color: #fff;
   display: flex;
@@ -137,7 +150,7 @@ footer {
   align-items: center;
   max-width: 840px;
   margin: 0 auto;
-  padding: 1rem;
+
 }
 
 footer .social {
@@ -149,14 +162,17 @@ footer .social img {
   width: 30px;
   height: 30px;
 }
-/* ✅ Navigation links */
+/*  Navigation links */
 nav a:hover {
   color: #ff6600;
 }
 
-/* ✅ Footer social media */
+/*  Footer social media */
 .socialmedia a {
   text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 700;
   margin: 0 8px;
 }
 
