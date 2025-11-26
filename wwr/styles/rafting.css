@@ -3,6 +3,9 @@
   --secondary-color: #f4a261;     /* warm sand (updated to project spec) */
   --accent1-color: #264653;       /* dark slate blue */
   --accent2-color: #e9c46a;       /* light golden yellow */
+  --text-dark: #003300;           /* dark green text */
+  --text-light: #000;             /* black text */
+  --text-white: #fff;             /* white text */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Arial, Helvetica, sans-serif;
 }
@@ -34,7 +37,7 @@ nav a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   font-weight: 700;
-  color: #000;
+  color: var(--text-light);
   background-color: var(--secondary-color);
   border-radius: 4px;
 }
@@ -47,7 +50,7 @@ nav a {
 
 body {
     font-family: var(--body-font);
-    color: #003300;
+    color: var(--text-dark);
     background-color: var(--secondary-color);
 
 }
@@ -59,7 +62,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: #003300;
+    color: var(--text-dark);
 
 }
 
@@ -94,14 +97,14 @@ main {
   background-color: var(--accent1-color);
   padding: 0.5rem 1rem;
   border-radius: 4px;           
-  color: white;
+  color: var(--text-white);
 }
 
 .hero article {
   position: absolute;  
   bottom: 10px;      
   right: 20px;
-  color: #fff;
+  color: var(--text-white);
   background-color: var(--accent1-color);
   padding: 10px;
   max-width: 60%;
@@ -144,7 +147,7 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: var(--accent1-color);
-  color: #fff;
+  color: var(--text-white);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,7 +173,7 @@ nav a:hover {
 /*  Footer social media */
 .socialmedia a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-white);
   padding: 0.5rem;
   font-weight: 700;
   margin: 0 8px;
