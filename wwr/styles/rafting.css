@@ -189,3 +189,76 @@ nav a:hover {
 .socialmedia img:hover {
   transform: scale(1.2);
 }
+
+/* Contact Info */
+.contact-info {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none; /* supprime le style inline */
+}
+
+/* Team Profiles */
+.team .profiles {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team figure {
+  text-align: center;
+  max-width: 200px;
+}
+
+.team img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--accent1-color);
+}
+
+/* Contact Form */
+.contact-form form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: var(--text-white);
+  border: 1px solid var(--accent1-color);
+  border-radius: 6px;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid var(--accent1-color);
+  border-radius: 4px;
+}
+
+/* Utility Button Class */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent1-color);
+}
