@@ -1,6 +1,6 @@
 :root {
   --primary-color: #055a05;       /* forest green */
-  --secondary-color: #f4a261;     /* warm sand */
+  --secondary-color: #e08b50;     /* warm sand */
   --accent1-color: #264653;       /* dark slate blue */
   --accent2-color: #e9c46a;       /* light golden yellow */
   --heading-font: "Times New Roman", "Georgia", serif;
@@ -47,8 +47,8 @@ nav a {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #e08b50;
+    color: #003300;
+    background-color: var(--secondary-color);
 
 }
 
@@ -143,8 +143,8 @@ main {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: steelblue;
-  color: #fff;
+  background-color: #3a6ca8;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
