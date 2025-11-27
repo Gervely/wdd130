@@ -262,3 +262,13 @@ nav a:hover {
 .btn-primary:hover {
   background-color: var(--accent1-color);
 }
+
+body {
+  color: var(--text-dark);
+  background-color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
