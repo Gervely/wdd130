@@ -8,6 +8,14 @@
   --text-light: #fff; /* light/white text */
   --muted-bg: #ddd; /* muted background for boxes */
   --shadow-color: rgba(128,128,128,0.6); /* shadow fallback */
+  /* Demo / example colors used in week exercises (exposed globally for consistency) */
+  --demo-a: #aba;
+  --demo-b: #abb;
+  --demo-c: #ace;
+  --demo-d: #abd;
+  --demo-beige: beige;
+  --demo-lightblue: lightblue;
+  --demo-light-yellow: lightgoldenrodyellow;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Roboto, Arial, sans-serif;
 }
