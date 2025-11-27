@@ -7,8 +7,8 @@
 main {
     max-width: 500px;
     
-    background-color: #555;
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--text-light);
 }
 
 h1 {
@@ -17,8 +17,8 @@ h1 {
 
 form {
    
-    background-color: #ddd;
-    color: #111;
+    background-color: var(--muted-bg);
+    color: var(--text-dark);
 }
 
 input, textarea, select, button {
@@ -27,18 +27,18 @@ input, textarea, select, button {
 }
 
 button {
-    background-color: navy;
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--text-light);
     margin: 0 auto;
     display: block;
     border-radius: .5rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 code {
     display: block;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--text-dark);
+    color: var(--text-light);
 
 }
 

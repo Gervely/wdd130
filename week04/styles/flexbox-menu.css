@@ -4,7 +4,7 @@ body {
 }
 
 nav {
-    background-color: #36454f;
+    background-color: var(--accent1-color);
 }
 
 nav ul {
@@ -19,7 +19,7 @@ nav ul {
 
 nav a {
     display: block;
-    color: #fff;
+    color: var(--text-light);
     text-align: center;
     padding: 1rem;
     text-decoration: none;
@@ -29,13 +29,13 @@ p {
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     padding: 1rem;
-    background-color: #bed;
+    background-color: var(--muted-bg);
     max-width: 400px;
 }
 
 #devtools-btn {
-    background-color: #36454f;
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--text-light);
     border: none;
     padding: 12px 24px;
     margin: 1rem;
@@ -47,9 +47,9 @@ p {
 }
 
 #devtools-btn:hover {
-    background-color: #4a5a6a;
+    background-color: var(--accent1-color);
 }
 
 #devtools-btn:active {
-    background-color: #2a3a4a;
+    background-color: var(--accent1-color);
 }

@@ -4,6 +4,10 @@
   --secondary-color: #f4a261; /* warm sand */
   --accent1-color: #264653; /* dark slate blue */
   --accent2-color: #e9c46a; /* light golden yellow */
+  --text-dark: #000; /* primary text (black) */
+  --text-light: #fff; /* light/white text */
+  --muted-bg: #ddd; /* muted background for boxes */
+  --shadow-color: rgba(128,128,128,0.6); /* shadow fallback */
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Roboto, Arial, sans-serif;
 }
@@ -17,8 +21,8 @@
 body {
   font-size: 16px;
   font-family: var(--body-font);
-  color: #000;
-  background-color: #fff;
+  color: var(--text-dark);
+  background-color: var(--text-light);
 
 }
 
@@ -41,12 +45,12 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff; /* shorthand for white */
+  color: var(--text-light); /* shorthand for white */
 }
 
 h1 {
   color: var(--accent1-color);
-  border-bottom: #fff 2px solid var(--accent1-color);
+  border-bottom: var(--text-light) 2px solid var(--accent1-color);
   padding-bottom: 0.5rem;
 }
 
@@ -60,32 +64,30 @@ main {
   margin: 1rem;
 }
     
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
+/* (aside consolidated further below) */
 
 main img {
   width: 150px;
   height: auto;
   border: 1px solid var(--accent1-color);
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right;
-    margin: 0 0 1rem 1rem;
+  padding: 2px;
+  box-shadow: 0 0 30px var(--shadow-color);
+  float: right;
+  margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
-    margin: 1rem;
+  padding: 0;
+  margin: 1rem;
 }
 
+/* Consolidated aside rule (merged duplicate definitions) */
 aside {
-    width: 20em;
-    text-align: center;
-    position: relative;
+  width: 20rem; /* prefer rem across layout */
+  text-align: center;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
@@ -100,18 +102,18 @@ aside h2 {
 }
 
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
-    text-align: center;
+  margin-top: 1em;
+  border-top: 1px solid var(--text-dark);
+  text-align: center;
 }
 
 /* class selectors */
 .box {
   margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 10%);
+  border: 1px solid rgba(0,0,0,0.1);
   padding: 1rem;
-  background-color: #ddd;
-  color: #000;
+  background-color: var(--muted-bg);
+  color: var(--text-dark);
 }
 
 .indented {

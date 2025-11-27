@@ -3,7 +3,7 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr 1fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
     max-width: 1000px;
 }
 
@@ -29,19 +29,19 @@ header {
 
 .navigation a {
     display: block;
-    color: navy;
+    color: var(--accent1-color);
     padding: 20px;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
 .navigation a:hover {
-    color: tomato;
+    color: var(--accent2-color);
     text-decoration: underline;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--body-font);
 }
 
 h1 {
@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-    color: Maroon;
+    color: var(--primary-color);
     font-size: 1.25rem;
 }
 
@@ -59,7 +59,7 @@ section {
     margin: 1em auto;
     padding: 1em;
     border: 1px solid rgb(0 0 0 / 10%);
-    background-color: #ddd;
+    background-color: var(--muted-bg);
     width: min(800px, 100%);
 }
 

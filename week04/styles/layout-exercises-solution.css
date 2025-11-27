@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --demo-a: #aba;
+    --demo-b: #abb;
+    --demo-c: #ace;
+    --demo-d: #abd;
+}
+
 body {
     margin: 1rem;
     font-family: monospace;
@@ -22,14 +29,14 @@ div {
 }
 
 .flex {
-    background-color: #aba;
+    background-color: var(--demo-a);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .grid {
-    background-color: #abb;
+    background-color: var(--demo-b);
     display: grid;
     place-items: center;
 }
@@ -41,7 +48,7 @@ div {
 }
 
 .two {
-    background-color: #ace;
+    background-color: var(--demo-c);
     height: 100px;
 }
 
@@ -55,5 +62,5 @@ div {
 
 .three {
     margin: .25rem;
-    background-color: #abd;
+    background-color: var(--demo-d);
 }

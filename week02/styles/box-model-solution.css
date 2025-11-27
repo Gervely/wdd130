@@ -3,16 +3,16 @@
     margin: 10px;
     border: 1px solid rgba(0, 0, 0, .1);
     padding: 15px;
-    background-color: #247;
-    color: #fff;
+    background-color: var(--accent1-color);
+    color: var(--text-light);
 }
 
 .callout img {
     float: right;
     margin: 0 0 10px 15px;
-    border: 1px solid #000;
+    border: 1px solid var(--text-dark);
     padding: 3px;
-    background-color: #bbb;
+    background-color: var(--muted-bg);
     width: 100px;
     height: auto;
 
@@ -24,7 +24,7 @@ blockquote {
 
 cite {
     display: block;
-    border-top: 1px dotted #fff;
+    border-top: 1px dotted var(--text-light);
     padding-top: 3px;
     text-align: right;
     font-size: smaller;

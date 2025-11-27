@@ -17,7 +17,7 @@ p {
 }
 
 code {
-    color: darkgreen;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 1.4rem;
 }
@@ -26,13 +26,13 @@ code {
 
 .box {
     margin: 20px 0;
-    border: 1px solid rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0,0,0,0.1);
     padding: 10px;
-    background-color: #ddd; /* this is shorthand for #dddddd */
+    background-color: var(--muted-bg); /* this is shorthand for #dddddd */
 }
 
 .highlight {
-    background-color: #efefaa;
+    background-color: var(--accent2-color);
     border-radius: 25px;
     padding: 25px;
 }
@@ -40,8 +40,8 @@ code {
 /* ID examples - should be unique */
 
 #note {
-    background-color: #333;
-    color: white;
+    background-color: var(--text-dark);
+    color: var(--text-light);
     width: fit-content;
 }
 
@@ -50,8 +50,8 @@ code {
 }
 
 #best-practice {
-    background: linear-gradient(135deg, #000 0%, #999 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--text-dark) 0%, rgba(153,153,153,1) 100%);
+    color: var(--text-light);
     border-radius: 20px;
     padding: 20px
 }
