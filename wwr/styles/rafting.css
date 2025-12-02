@@ -14,7 +14,7 @@ header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     display: grid;
-    grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
     align-items: center;
     max-width: 840px;
     margin: 0 auto;
@@ -30,6 +30,41 @@ nav {
   display: flex;
   justify-content: space-evenly; 
   align-items: center;           
+}
+
+/* Contact page specific layout (keeps other pages untouched) */
+body.contact-page header nav {
+  justify-self: end; /* push nav to the right side of header grid */
+}
+
+body.contact-page header img {
+  margin-right: 1rem;
+}
+
+body.contact-page main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Make contact-info and contact-form occupy left/right columns */
+body.contact-page .contact-info {
+  grid-column: 1 / 2;
+}
+
+body.contact-page .contact-form {
+  grid-column: 2 / 3;
+}
+
+/* Team section spans full width below */
+body.contact-page .team {
+  grid-column: 1 / -1;
+}
+
+/* Make iframe responsive within the grid column */
+body.contact-page .map iframe {
+  height: 300px;
 }
 
 nav a {
