@@ -3,14 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-:root {
-    --demo-a: #aba;
-    --demo-b: #abb;
-    --demo-c: #ace;
-    --demo-d: #abd;
-}
-
 body {
     margin: 1rem;
     font-family: monospace;

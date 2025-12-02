@@ -13,9 +13,9 @@
   --demo-b: #abb;
   --demo-c: #ace;
   --demo-d: #abd;
-  --demo-beige: beige;
-  --demo-lightblue: lightblue;
-  --demo-light-yellow: lightgoldenrodyellow;
+  --demo-beige: #F5F5DC;
+  --demo-lightblue: #ADD8E6;
+  --demo-light-yellow: #FAFAD2;
   --heading-font: "Times New Roman", "Georgia", serif;
   --body-font: Roboto, Arial, sans-serif;
 }
