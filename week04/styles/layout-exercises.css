@@ -21,21 +21,29 @@ div {
 }
 
 .flex {
-    background-color: var(--demo-a);
     /* write declarations here */
+    background-color: var(--demo-a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .grid {
-    background-color: var(--demo-b);
     /* enter declarations here */
-
+    background-color: var(--demo-b);
+    display: grid;
+    place-items: center;
 }
+
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 
 .two {
     background-color: var(--demo-c);
@@ -44,13 +52,16 @@ div {
 
 .container3 {
     /* write declarations here */
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* or grid-template-columns: repeat(3, 1fr); */
 }
+
 
 .columns-3 {
     /* write declaration here */
-
+    grid-column: 1/4; /* or grid-column: span 3; */
 }
+
 
 .three {
     margin: .25rem;
